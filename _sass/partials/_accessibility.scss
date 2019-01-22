@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Accessibility styles
+   ========================================================================== */
+
+.accessibility-text { 
+	border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/*
+ * Extends the .accessibility-text class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.accessibility-text.focusable:active,
+.accessibility-text.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/* Skip navigation
+----------------------------------------------------------------------------------------------------*/
+#skip-nav {
+	position: absolute;
+	top: -9999px;
+	left: 0;
+	z-index: 999;
+}
+#skip-nav li {
+	width: 300px;
+}
+#skip-nav a {
+	position: absolute;
+	top: 0;
+	font-size: 0.875em;
+	padding: 5px 8px;
+	color: #FFFFFF;
+}
+#skip-nav a:active, 
+#skip-nav a:focus {
+	top: 9999px;
+	color: #FFFFFF;
+}
+
+#skip-nav li a:hover:after, 
+#skip-nav li a:focus:after {
+	content: " [" attr(accesskey) "] ";
+}
+
+#main:focus, 
+#primary-nav:focus, 
+#secondary-nav:focus {
+	outline: none;
+}

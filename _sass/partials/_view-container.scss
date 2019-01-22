@@ -1,0 +1,14 @@
+#view-container {
+	background: $bright-blue;
+	position: relative;
+	padding: 0;
+	width: 100%;
+}
+
+.js-ready #view-container {
+    left: 0;
+}
+
+  .js-nav #view-container {
+    right: 70%;
+}

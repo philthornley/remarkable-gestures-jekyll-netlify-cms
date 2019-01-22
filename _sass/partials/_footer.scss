@@ -1,0 +1,23 @@
+#footer {
+	background: #E6E6E6;
+}
+#footer footer {
+	@extend .block;
+	@include rem(max-width, 72.5rem);
+	text-align: center;
+	@include rem(font-size, 1.7rem);
+	@include rem(line-height, 2.2rem);
+}
+
+#footer [class*="icon-"] {
+	padding: 15px;
+}
+
+#footer .copyright {
+	@extend .txt-small;
+	color: $gray-medium;
+}
+
+#footer a {
+	text-decoration: none;
+}

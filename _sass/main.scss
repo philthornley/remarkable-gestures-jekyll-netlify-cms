@@ -1,11 +1,31 @@
 @charset "utf-8";
 
-@import
-  "partials/fonts",
-  "partials/variables",
-  "partials/mixins",
-  "partials/normalize",
-  "partials/utilities",
-  "partials/typography",
-  "partials/app"
-;
+@import "partials/normalize";
+@import "partials/variables";
+@import "partials/functions";
+@import "partials/viewport";
+@import "partials/view-container";
+@import "partials/icons";
+@import "partials/images";
+@import "partials/slide";
+@import "partials/main";
+@import "partials/nav-top";
+@import "partials/nav-links";
+@import "partials/block";
+@import "partials/csstransform-for-mobile-menu";
+@import "partials/logo";
+@import "partials/variables";
+@import "partials/type";
+@import "partials/grid";
+@import "partials/accessibility";
+@import "partials/content";
+@import "partials/article";
+@import "partials/media-queries";
+@import "partials/next-up";
+@import "partials/about-me";
+@import "partials/base";
+@import "partials/take-me-to-the-top";
+@import "partials/footer";
+@import "partials/reveal";
+@import "partials/code";
+@import "partials/pill";

@@ -1,0 +1,19 @@
+.slide {
+	-webkit-transition:-webkit-transform .2s linear; //Apply transitions to transfom properties only
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.js-nav .slide {
+	
+	-webkit-transform: translate3d(-70%,0,0);
+}
+
+.slide__reverse {
+	-webkit-transition:all .2s linear;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.js-nav .slide__reverse {
+	
+	-webkit-transform: translate3d(-70%,0,0);
+}

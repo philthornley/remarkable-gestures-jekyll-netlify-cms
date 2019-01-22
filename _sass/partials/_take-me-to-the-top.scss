@@ -1,0 +1,20 @@
+.take-me-to-the-top {
+	text-align: center;
+	@include rem(font-size, 1.7rem);
+	@include rem(line-height, 2.2rem);
+	font-weight: 300;
+}
+
+.take-me-to-the-top a, .take-me-to-the-top a:visited {
+	border-bottom: none;
+	text-decoration: none;
+	display: block;
+}
+
+.take-me-to-the-top a:hover, .take-me-to-the-top a:focus {
+	color: $gray-medium;
+}
+
+.take-me-to-the-top p span{
+	@extend .link-style;
+}
