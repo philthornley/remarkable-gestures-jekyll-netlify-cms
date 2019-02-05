@@ -1,34 +1,23 @@
 ---
 layout: default
 ---
-{% assign author = site.data.authors[page.author] %}
+<div class="content__block">
+  
+  <span class="article--date"><time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time></span>
+  {% include page-intro.html %}
+  {{ content }}
 
-<h2>{{ page.title }}</h2>
+</div>
 
-<time datetime="{{ page.date }}">
-  <small>
-    <strong>{{ page.date | date_to_string }}</strong>
-    {% if author %}
-      by {{ author.name }}
-    {% endif %}
-  </small>
-</time>
-
-{% include page-intro.html %}
-
-{{ content }}
-
+{% if page.previous.url %}
 <nav aria-label="Adjacent Posts">
-  <ul>
-    {% if page.previous.url %}
-      <li>
-        <a href="{{page.previous.url}}" rel="prev">&laquo; {{page.previous.title}}</a>
-      </li>
-    {% endif %}
-    {% if page.next.url %}
-      <li>
-        <a href="{{page.next.url}}" rel="next">{{page.next.title}} &raquo;</a>
-      </li>
-    {% endif %}
-  </ul>
+  <div class="content__block next-up reveal__fade reveal__fade-now">
+    <div>
+      <h2 class="txt-small">Next up</h2>
+
+      <a href="{{page.previous.url}}" rel="prev" class="txt-xlarge">{{page.previous.title}}</a>
+    </div>
+  </div>
 </nav>
+
+{% endif %}

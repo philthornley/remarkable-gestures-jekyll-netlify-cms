@@ -1,21 +1,25 @@
 ---
 layout: compress
 ---
-
 <!DOCTYPE html>
-<html data-current="{{ page.section }}" lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+  <body class="" itemscope itemtype="http://schema.org/WebPage">
+
+  	{% include /partials/js__google-tag-manager.html %}
 
     {% include header.html %}
 
-    <main>
+    {% include /partials/intro-block.html %}
 
-      {{ content }}
-
-    </main>
+	<!-- Content -->
+	<main>
+		<div class="content">
+			
+				{{ content }}
+		</div><!-- /Content -->
+	</main>
 
     {% include footer.html %}
 

@@ -1,5 +1,90 @@
 <footer>
+</div><!-- End of main -->
+			<?php if(has_menu_items()): ?>
+			<nav id="nav-links" role="navigation" class="">
+				<div class="block">
+					<h2>Menu</h2>
+					<ul>
+						<li class="is-active"><a href="<?php echo base_url(); ?>">Home</a></li>
+						<?php while(menu_items()): ?>
+						<li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
+							<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
+			          <?php echo menu_name(); ?>
+			        </a>
+						</li>
+				    <?php endwhile; ?>
+					</ul>
+					<a class="close-btn" id="nav-close-btn" href="#nav-top">
+					<span class="icon-close"></span>
+					<span class="close-btn--text">Return to Content</span></a>
+				</div>
+			</nav>
+			<?php endif; ?>
+		</div><!-- End of view container -->	
+				
+		<div class="base">
+			<div class="content__block about-me-footer">
+				<div class="img">
+					<img src="/images/phil-thornley.jpg" alt="Phil Thornley" class="reveal__rotate"/>
+				</div>
+				<div class="copy">
+					<h2 class="txt-medium">Phil Thornley</h2>
+					<p>Hello, thanks for taking the time to read this, I hope it was worth the trouble. Remarkable Gestures is a place for me to store my thoughts on designing and building digital products and hopefully it'll be interesting for you too. I like making things, especially things that are useful for other people. When working on a new site or app I like to find out the real motivations by talking to people and then make it simpler, easier and more delightful to use one pixel at a time. By day I'm very privileged to be a Product Manager and Experience Design Consultant at <a href="http://www.thoughtworks.com" title="ThoughtWorks Technology Consultants" rel="nofollow">ThoughtWorks</a> in Manchester UK.</p> 
+					<p>Please feel free to say hello and <a href="http://www.twitter.com/philthornley">follow me on twitter</a>.</p>
+				</div>
+			</div>
+				
+			<div class="content__block take-me-to-the-top">
+				<a href="#top">
+				<span class="icon-arrow-up"></span>
+				<p><span>To the top!!!</span></p></a>
+			</div>
+			<div role="footer" id="footer" class="">
+				<footer>	
+				
+					<a href="https://twitter.com/philthornley"><span class="icon-twitter"></span><span class="accessibility-text">Phil Thornley on Twitter</span></a>
+					<a href="https://www.linkedin.com/pub/phil-thornley/27/721/90a"><span class="icon-linkedin"></span><span class="accessibility-text">Phil Thornley on Linkedin</span></a>
+					<a href="https://plus.google.com/+PhilThornley"><span class="icon-googleplus"></span><span class="accessibility-text">Phil Thornley on Google Plus</span></a>
+					<a href="https://www.flickr.com/photos/70585278@N00/"><span class="icon-flickr"></span><span class="accessibility-text">Phil Thornley on Flickr</span></a>
+					<p class="copyright"><span>Hand coded in Manchester, UK</span>    |    <span>Copyright &copy; Phil Thornley {{ site.time | date: '%Y' }}</span></p>
+				</footer>
+			</div>
+		</div><!-- End of base -->
+	</div><!-- End of Viewport -->
+	
+	<!-- Async loading -->
+	<script type="text/javascript">
+		function downloadJSAtOnload() {
+			var element = document.createElement("script");
+			element.src = "/js/libs/r-images.js";
+			document.body.appendChild(element);
+			element = document.createElement("script");
+			element.src = "/js/libs/reveal-on-scroll.js";
+			document.body.appendChild(element);
+		}
+		if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+			else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+			else window.onload = downloadJSAtOnload;
+	</script>
 
-  <small>This project is maintained by <a href="https://www.danurbanowicz.com" rel="noopener">Dan Urbanowicz</a>. View the repo on <a href="https://github.com/danurbanowicz/jekyll-netlify-boilerplate" rel="noopener">Github</a></small>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </footer>
