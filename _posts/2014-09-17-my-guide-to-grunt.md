@@ -39,7 +39,7 @@ Once you're in the project root folder in terminal, run the command...
 
 When I ran this I got the following errors...
 
-![grunt-tutorial-npm-install.png](/content/grunt-tutorial-npm-install.png)
+![grunt-tutorial-npm-install.png](/images/temp-content/grunt-tutorial-npm-install.png)
 
 However, you can safely ignore them generally as they are errors for the plugin author and shouldn't effect you.
 
@@ -146,7 +146,7 @@ Next step, in our empty grunt.js file, paste the following...
 
 I recently ran into a problem whereby I was getting an error when trying to install & run grunt...
 
-![npm-lock-error-terminal.png](/content/npm-lock-error-terminal.png)
+![npm-lock-error-terminal.png](/images/temp-content/npm-lock-error-terminal.png)
 
 ## #Here's the fix
 
