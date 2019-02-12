@@ -18,7 +18,7 @@
 	src:url("../fonts/lato/Lato-Reg.ttf");
 }
 
-$brandfont:'Lato',helvetica,arial,sans-serif;
+$brandfont:'Open Sans',helvetica,arial,sans-serif;
 
 html { 
 	color: $near-black;
@@ -40,16 +40,16 @@ h1, h2,h3,h4,h5,h6, .txt-xlarge {
 }
 
 h2,h3,h4,h5,h6 { 
-	@include rem(font-size, 3rem);
-	font-weight: 700;
-	@include rem(line-height, 3.6rem 0); 
+	@include rem(font-size, 3.8rem);
+	font-weight: 300;
+	@include rem(line-height, 4.8rem 0); 
 	@include rem(margin, 0 0 0.7272rem);
 }
 
 h1, .txt-xlarge { 
 	@include rem(font-size, 5rem);
 	font-weight: 200;
-	@include rem(line-height, 5.5rem);
+	@include rem(line-height, 6.5rem);
 	@include rem(margin, 0 0 0.8rem); 
 }
 
