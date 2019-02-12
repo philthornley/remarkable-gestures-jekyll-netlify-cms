@@ -3,9 +3,9 @@ layout: post
 title: Agile Planning Game&colon; Help your team understand the principles
 h1: Agile Planning Game&colon; Help your team understand the principles
 permalink: /agile-planning-game-help-your-team-understand-the-principles/
-date: '2019-02-20 22:06:51'
+date: '2019-02-02 22:06:51'
 categories: agile
-description: Prioritise, plan and sequence your delivery. This exercise demonstrates how you can make more informed decisions when you have good information on story value, dependencies, story size and team velocity. The game is purposefully abstract to shift focus from the detail and onto the conversation and the team approach to the task
+description: Prioritise, plan and sequence your delivery. This exercise demonstrates how you can make more informed decisions when you have good information on story value, dependencies, story size and team velocity
 strapline: Prioritise, plan and sequence your delivery
 published: true
 ---
