@@ -1,34 +1,65 @@
 ---
 layout: default
 ---
-<!-- Content -->
-    <div class="content__block next-up">
-      <h2 class="txt-small">Latest gibberish</h2>
-      {% for post in site.posts limit:1 %}
-        <div class="txt-xlarge">
-          <a href="{{ post.url }}" title="{{ post.h1 }}">{{ post.h1 }}</a>
-        </div>
-        <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
-        <p class="txt-small">Posted <time datetime="{{ post.date | date_to_string }}" itemprop="datePublished">{{ post.date | date_to_string }}</time></p>
-      {% endfor %}
-    </div>
-    
-    <div class="next-up">
-      <h2 class="txt-small">Older mumblings</h2> 
+<h1>{{ page.h1 }}</h1>
+<p class="txt-xlarge">
+Hello, I’m Phil Thornley, a Product Manager & Experience Designer based in Manchester.
+</p>
+
+<h2>A few things about me...</h2>
+
+<p>Since 2015, I’ve worked for ThoughtWorks, a global software consultancy, working with large enterprises to create great customer experiences that deliver business value.</p>
+
+<p>I specialise in <a href="#">Service Design</a> and <a href="#">User Research</a>. I’m also an experienced <a href="#">Agile</a> practitioner and coach.</p>
+
+<p>Before ThoughtWorks, I spent 8 years at the Co-op doing UX.</p>
       
-      {% for post in site.posts offset:1 %}
+<h2>Organisations I’ve worked with</h2>
 
-          <div class="content__block">
-            <h3 class="txt-xlarge"><a href="{{ post.url }}" title="{{ post.h1 }}">{{ post.h1 }}</a></h3>
-              <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
-          </div>
+<ul>
+  <li><img src="/assets/img/static/client-logo.png"/></li>
+  <li><img src="/assets/img/static/client-logo.png"/></li>
+  <li><img src="/assets/img/static/client-logo.png"/></li>
+  <li><img src="/assets/img/static/client-logo.png"/></li>
+  <li><img src="/assets/img/static/client-logo.png"/></li>
+  <li><img src="/assets/img/static/client-logo.png"/></li>
+  <li><img src="/assets/img/static/client-logo.png"/></li>
+  <li><img src="/assets/img/static/client-logo.png"/></li>
+  <li><img src="/assets/img/static/client-logo.png"/></li>
+</ul>
 
-      {% endfor %}
-    </div>
+<h2>Things I believe in</h2>
 
-    
-    <nav class="pagination">
-      <div class="wrap">
-      </div>
-    </nav>
-<!-- /Content -->
+<h3>Agile</h3>
+
+<p>I prefer Agile over Waterfall; to be truly succeed, teams cannot be agile in silo and I actively promote agile in all organisational levels.</p>
+
+<h3>Data & ‘Value’ led</h3>
+
+<p>Whilst some ‘gut feel’ initiatives work, I prefer to start with Data, Research & realistic measurements / KPI’s.</p>
+
+<h3>My rule of thumb for prioritisation</h3>
+
+<p>Use Business strategy to choose Target customers, use their Goals and activities to choose Features and content last. Always Minimise output, maximise outcome and impact. </p>
+
+<h3>Collaborative & Co-designing sessions</h3>
+
+<p>Bringing together different parts of the business brings new perspectives & ideas.</p>
+
+<h3>Sharing</h3>
+
+<p>My tactic is to work out loud and over communicate (Proved very successful in my current role). I advocate a truly open door policy. Workshops over meetings - My favourite - When talented people are one room, something good should come out of it, not actions for later. </p>
+
+<h3>Accessibility</h3>
+
+<p>It’s not a nice-to-have: it’s a standard. I’m proud that the Co-op was the first national high street brand to achieve the RNIB’s Surf Right standard.</p>
+
+<h3>Prototyping & early feedback</h3>
+
+<p>Experiencing an idea helps you refine it. I’d rather spend a day creating a testable paper, clickable jpeg, or HTML & CSS prototype than 4-6 weeks building the finished idea without any feedback</p>
+
+<h3>User testing</h3>
+
+<p>Most designs launch without being user tested. Not mine. MVT & A/B testing - Test, learn, iterate & improve in quick succession. </p>
+
+<p>Thanks for reading.</p>
