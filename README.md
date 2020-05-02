@@ -1,34 +1,4 @@
-# Jekyll Netlify Boilerplate
-
-*Note: Check out my [Eleventy Netlify Boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate) if you want to get with the cool kids; it does the same as this project but uses the [Eleventy](https://www.11ty.io/) static site generator, is super flexible and doesn't require Ruby.*
-
-**A really simple Jekyll template for creating a fast, static website on Netlify with
-a continuous deployment workflow.**
-
-🔥 **This project is featured on Netlify's official [template showcase](http://templates.netlify.com/template/jekyll-with-netlify-cms-boilerplate/) and blog: [The top 10 Static Site Generators to watch in 2018](http://templates.netlify.com/template/jekyll-with-netlify-cms-boilerplate/)** 🔥
-
-* Minimal styling, ready to make your own
-* Example blog posts, pages and contact form
-* Responsive CSS Grid layout with fallbacks for older browsers
-* Continuous Deployment workflow via Netlify and Github
-* Netlify CMS for managing content
-* Netlify Identity for authenticating users
-* Netlify Forms for processing your static HTML forms with reCAPTCHA
-* Optional Netlify `_redirects` and `_headers` files ready to use
-* Jekyll SASS pipeline
-* Minified HTML and CSS
-
-Based on Netlify's [Jekyll + Netlify CMS](https://github.com/netlify-templates/jekyll-netlify-cms) starter template, head over there for more details on deployment and build settings or to get help with setting up Netlify.
-
-For help with templates, local development and other Jekyll related stuff, check out the excellent [Jekyll Docs](https://jekyllrb.com/docs/home/).
-
-## [View Demo](https://jekyll-netlify-boilerplate.netlify.com/)
-
-## Performance
-
-You can test the demo site's TTFB (Time To First Byte) at [testmysite.io](https://testmysite.io/5b50abe51f12b74b81dd5442/jekyll-netlify-boilerplate.netlify.com)
-
-## Getting started
+## One click install if I ever want to duplicate it...
 
 Simply click the deploy button to get your own copy of the repository deployed to Netlify:
 

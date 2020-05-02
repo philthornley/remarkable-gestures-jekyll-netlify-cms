@@ -1,0 +1,60 @@
+---
+layout: post
+title: Sketch Collaboration Guidelines
+h1: Communicating your product roadmap
+permalink: /sketch-collaboration-guidelines/
+date: '2019-10-16 10:07:32'
+categories: general
+description: I find it isn't easy to present one visualization on its own to communicate everything you're trying to say and not create more and more questions around timelines etc.
+strapline: timelines and delivery cadence often lead to very different challenges and pressures. 
+---
+Have any of you ever set up guidelines for collaboration in Sketch (or similar tools?) I am considering this as a way of making our Sketch files easier to collaborate on, just like coding style guides tell developers how to structure and format their code.
+
+I have come up with a few guidelines for symbol libraries that I think could be helpful. What do you think?
+
+Symbols
+Do name your layers.
+A rectangle should probably be called Background or Border.
+Text layers should be renamed to "Label", "H1", or such. Don't leave the automatic layer name in. The symbol itself may retain its example text if it makes sense.
+Use "Rename it" (plugin) for renaming several symbols at once.
+Come up with a system of emojis for certain layers so that you can easily find them, like "🔠 Label". These emojis appear in the Sketch UI and make finding the right override easy.
+Use fill styles for coloring. That enables the user to override the colors in their symbol instance.
+All brand colors should be managed as layer styles.
+You can use fill styles to color text as well which is often very handy. Do that by putting a rectangle atop of the text layer you want to color, select both, and intersect them.
+Strictly speaking, there is no need for layer styles for borders.
+Don't use artboard background colors.
+Every text in your symbol should have a text style, so they can be overridden in the symbol instance.
+Don't use lines. Use rectangles instead. Lines come with resizing issues and can't be colored using fill styles.
+Instead of borders, you can use two rectangles subtracted from each other so they can be colored using fill styles.
+Make your symbols resizable. It takes a few minutes to learn but it's an extreme time saver.
+Do use the symbol layout feature. It is good. No plugins are needed anymore.
+Don't rely on plugins to make changing your symbols feasible, unless everybody likes and uses that plugin.
+Mind the order of layers in symbols: they should be arranged from top left to bottom right. This makes it easier to find the override when using the symbol.
+Groups are often superfluous. Use them sparingly. Top-level groups in symbols are a bad sign.
+If you have to create a new icon, make sure it one combined shape and the color is set through a layer style. If the icon is usually white, add a dark background color to the artboard. Make icon artboards exportable so devs can download it as an asset in Zeplin or other tools.
+Come up with a consistent naming scheme.
+Instances
+Do name your instances.
+Order your instances from top to bottom in the layer list so they are easy to find. Unfortunately, layers will often end up in the wrong order, but "sketch-automate" is a good plugin to help with that.
+Instead of detaching, try to improve the symbol.
+
+
+
+
+
+
+
+
+The first thing I do for collaborative  Sketch work is set up Abstract (https://www.abstract.com/), a git-based repository that allows for good version control. 
+
+It has many other features too that largely obviate the need for Zeplin.
+
+It also makes it really easy to manage universal symbol libraries used by multiple files. 
+
+
+
+
+
+
+
+Oh yeah, Abstract or at least some central repo is definitely a must. Abstract comes with its own challenges though. E. g., I've worked in a team where they would use it in a way that was somehow worse than having a shared drive. But used right, Abstract is awesome!

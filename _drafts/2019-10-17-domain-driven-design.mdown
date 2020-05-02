@@ -1,0 +1,21 @@
+---
+layout: post
+title: Domain driven design
+h1: Domain driven design
+permalink: /domain-driven-design/
+date: '2019-10-17 10:07:32'
+categories: general
+description: Domain driven design 
+---
+
+1. Your current list of services / code bases / Tribe and Squad names does not equal your Domains. 
+2. DDD is not a technology-only activity - it needs input from product / wider business context.
+3. Resist all urges to digitise your domain model too early - people fixate on tooling and curating of digital artifacts - keep it on a wall and point at it every day.
+4. Actively expect / encourage your domain model to change - that means you're doing new things - it will never be "done".
+5. Be careful introducing hexagons into a client as they're like catnip for architects and you'll never find the right size hexagonal post-its
+
+Other than that, Event Storming is your friend in this endeavour - talking everyone through a time-like customer journey to identify the events, systems, people, commands etc is IMHO the best way to approach the problem. 
+
+DDD at scale https://skillsmatter.com/skillscasts/13541-adopting-domain-driven-design-at-scale
+
+check out this initiative to make DDD more accessible https://domainstorytelling.org/
