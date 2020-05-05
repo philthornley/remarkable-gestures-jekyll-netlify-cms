@@ -1,4 +1,18 @@
-<header id="" role="banner" class="">
-	<span class="accessibility-text">Skip to Navigation</span></a>
-	<a class="" id="logo" href="{{ "/" | relative_url }}">Phil Thornley</a>
-</header>
+
+
+<nav>
+  <div class="nav__container">
+    <a class="" id="logo" href="{{ "/" | relative_url }}">Phil Thornley</a>
+    <button>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <ul class="navbar-menu">
+      <li><a href="/" class="nav__link {% if page.url == "/" %} current {% endif %}" >About</a></li>
+      <li><a href="/" class="nav__link">Writing</a></li>
+    </ul>
+    
+  </div>
+</nav>

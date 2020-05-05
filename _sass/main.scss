@@ -1,3 +1,44 @@
 @charset "utf-8";
 
-@import "partials/normalize";
+/* SETTINGS - Global settings / variables such as $blue or $text-heading-size-1   */ 
+
+@import './imports/_settings.global';
+@import './imports/_settings.color';
+
+
+/*  TOOLS - Global Mixins such as font-sizing or media queries  */ 
+@import './imports/_tools.rem';
+@import './imports/_tools.prefixer';
+
+
+/*  GENERIC - High level far reaching styles such as css reset  */ 
+@import './imports/_generic.normalize';
+
+
+/* ELEMENTS - Bare HTML such as headings (H1, H2...), a etc   */ 
+@import './imports/_elements.type';
+
+
+/* OBJECTS - Styling of none cosmetic design patterns such as .wrapper, .grid etc   */ 
+@import './imports/_objects.grid.scss';
+
+
+/* COMPONENTS - Explicit designed pieces of the DOM - most of development goes here  */ 
+@import './imports/_components.nav.scss';
+@import './imports/_components.footer.scss';
+@import './imports/_components.animate-reveal.scss';
+@import './imports/_components.homepage.scss';
+
+
+/* TRUMPS - e.g text-center {text-align:center!important;} */ 
+/* @import './imports/trumps.clearfix.scss'; */ 
+@import './imports/trumps.accessibility-text.scss';
+@import './imports/trumps.utilities.scss';
+/* @import './imports/trumps.shame.scss'; */
+
+/* Debugging */
+@import './imports/_debug-children';
+@import './imports/_debug-grid';
+
+/* Uncomment out the line below to help debug layout issues */
+/*@import './imports/_debug';*/

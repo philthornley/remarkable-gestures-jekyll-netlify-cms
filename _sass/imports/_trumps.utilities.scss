@@ -1,0 +1,85 @@
+/*******************
+  Utility Classes
+*******************/
+
+// Text Align
+.left-align {
+  text-align: left;
+}
+.right-align {
+  text-align: right
+}
+.center, .center-align {
+  text-align: center;
+}
+
+.left {
+  float: left !important;
+}
+.right {
+  float: right !important;
+}
+
+
+.center-block {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.image__fullwidth {
+	height: 100%;
+	width: 100%;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.light {
+  font-weight: 800;
+}
+
+
+.max-width-for-readability {
+  max-width: 650px;
+}
+
+
+.clear {
+  clear:both;
+}
+
+.line-height-zero {
+  line-height: 0;
+}
+
+.block {
+  display: block;
+}
+
+.large-margin-bottom {
+  margin-bottom:30px;
+}
+
+.xlarge-margin-bottom {
+  margin-bottom:60px;
+}
+
+.no-padding-top {
+  padding-top: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/*  --------------------------------------------------------------
+  TABLET & MOBILE ONLY 
+  -------------------------------------------------------------- */
+@media #{$medium-and-down} {
+  .image-100-percent-at-mobile {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,154 @@
+.intro {
+    background: $red;
+    color: white;
+    padding-top: 200px;
+}
+
+.intro__container, .clients__container, .things__container, .thankyou__container {
+    width: 70%;
+    margin: 0 auto;
+    clear: both;
+}
+
+.intro__heading {
+    margin-bottom: 130px;
+}
+
+.intro__about {
+    padding-left: 35%;
+    padding-bottom: 130px;
+    max-width: 625px;
+}
+
+.intro a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: #F2D36A 6px solid;
+    display: inline-block;
+    line-height: 0.65;
+}
+
+ .intro a:hover {   
+    opacity: 0.76;
+}
+
+.clients {
+    background: #fff;
+}
+
+.clients__container, .things__container {
+    padding-top: 115px;
+    padding-bottom: 115px;
+}
+
+.clients__grid {
+    /* Grid Fallback */
+  display: flex;
+  flex-wrap: wrap;
+  
+  /* Supports Grid */
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 1em;
+}
+
+.clients_grid--item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Flex Fallback */
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 1 1 200px;
+}
+
+/* If Grid is supported, remove the margin we set for the fallback */
+@supports (display: grid) {
+  .clients_grid--item {
+    margin: 0;
+  }
+}
+
+.clients_grid--item img {
+    max-width: 100%;
+}
+
+
+.things__one {
+    background: $gray-light;
+}
+
+.things__two {
+    background: #fff;
+}
+
+.things__three {
+    background: #2402CF;
+    color: #fff;
+}
+
+.things__left-align, .things__right-align {
+    max-width: 625px;
+}
+
+.things__right-align {
+    padding-left: 20%; 
+}
+
+
+.thankyou {
+    background-color: #fff;
+}
+
+.thankyou__container {
+    text-align: center;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media #{$medium-and-down} {
+
+    .intro__container, .clients__container, .things__container {
+        width: 90%;
+    }
+    .clients__grid {
+        grid-template-columns: repeat(3,1fr)
+    }
+
+    .intro__about {
+        padding: 0 10% 70px;
+    }
+
+    .things__left-align, .things__right-align {
+        padding-left: 0;
+    }
+}
+
+
+@media #{$small-and-down} {
+    .intro {
+        padding-top: 130px;
+    }
+
+    .intro__heading {
+        margin-bottom: 70px;
+    }
+
+    .intro__about {
+        padding: 0 3% 70px;
+    }
+
+    .clients__grid {
+        grid-template-columns: repeat(2,1fr)
+    }
+
+    .things__container {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+}

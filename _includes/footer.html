@@ -1,7 +1,39 @@
-<a href="#top">
-	<p>To the top!!!</span>
-</a>
-
 <footer>	
-	<p class="copyright"><span>Made in Manchester, UK</span>    |    <span>Copyright &copy; Phil Thornley {{ site.time | date: '%Y' }}</span></p>
+	<div class="footer__container">
+		<p class="copyright"><span>Made in Manchester, UK</span>    |    <span>Copyright &copy; Phil Thornley {{ site.time | date: '%Y' }}</span></p>
+	</div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+  
+  'use strict';
+  
+   var c, currentScrollTop = 0,
+       navbar = $('nav');
+
+   $(window).scroll(function () {
+      var a = $(window).scrollTop();
+      var b = navbar.height();
+     
+      currentScrollTop = a;
+     
+      if (c < currentScrollTop && a > b + b) {
+        navbar.addClass("scrollDown");
+      } else if (c > currentScrollTop && !(a <= b)) {
+        navbar.removeClass("scrollDown");
+      }
+      c = currentScrollTop;
+
+      if (a > 300) {
+      	navbar.addClass("scrollUp");
+      }
+      else {
+      	navbar.removeClass("scrollUp");
+      }
+  });
+  
+});
+</script>

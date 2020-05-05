@@ -1,0 +1,132 @@
+/*** Typography ***/
+$brandfont:'Lora', serif;
+
+
+$font-size-huge:    8rem;
+$font-size-xlarge:  6.6rem;
+$font-size-large:   6.6rem;
+$font-size-medium:  3.8rem;
+$font-size-normal:  1.8rem;
+$font-size-small:   1.4rem;
+$font-size-tiny:    1rem;
+
+$light-weight: 400;
+$heavy-weight: 600;
+
+
+html { 
+	color: $near-black;
+}
+
+body {
+	@include rem(font-size, $font-size-normal);
+	@include rem(line-height, 3.3rem);
+	//@include rem(margin, 0 0 3.3rem);
+	font-weight: 300;
+}
+
+a {
+	color: $link-blue;
+	text-decoration: none; 
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Headings
+   ========================================================================== */
+
+h1, h2,h3,h4,h5,h6 { 
+	font-family: $brandfont;
+	font-display: optional;
+}
+
+h2,h3,h4,h5,h6 { 
+	@include rem(font-size, $font-size-medium);
+	font-weight: $light-weight;
+	@include rem(line-height, 3.8rem 0); 
+	@include rem(margin, 0 0 2.4rem);
+}
+
+h1, .txt-large { 
+	@include rem(font-size, $font-size-large);
+	font-weight: $light-weight;
+	@include rem(line-height, 8rem);
+	@include rem(margin, 0 0 4.4rem); 
+}
+
+.txt-medium { 
+	@include rem(font-size, $font-size-medium);
+	@include rem(line-height, 4.4rem); 
+	@include rem(margin, 0 0 4.4rem); 
+	letter-spacing: -1px;
+} 
+
+.txt-normal { 
+	@include rem(font-size, $font-size-normal);
+} 
+
+.txt-small { 
+	@include rem(font-size, $font-size-small);
+} 
+
+.txt-xsmall { 
+	@include rem(font-size, $font-size-tiny);
+} 
+
+.brandfont {
+	font-family: $brandfont;
+	font-display: optional;
+}
+
+.section-title {
+    padding-top: 1em;
+    padding-bottom: .5em;
+}
+
+blockquote {
+	color: $gray-medium;
+	margin: 0 0 1.25em;
+	padding: 0.5625em 1.25em 0.625em 1.1875em;
+	border-left: 5px solid $red;
+	@include rem(font-size, 3rem);
+	@include rem(line-height, 3.6rem);
+	@include rem(margin, 0 0 3.3rem);
+	font-family: $brandfont;
+	font-style: italic;
+}
+
+.white {
+	color: #fff;
+}
+
+
+@media #{$small-and-down} {
+	body {
+		@include rem(font-size, $font-size-normal / 1.2);
+		@include rem(line-height, 3.3rem / 1.2);
+	}
+
+	h2,h3,h4,h5,h6 { 
+		@include rem(font-size, $font-size-medium / 1.2);
+		@include rem(line-height, 3.6rem/1.2); 
+	}
+
+	h1, .txt-large { 
+		@include rem(font-size, $font-size-large / 1.5);
+		@include rem(line-height, 8rem / 1.2);
+	}
+
+
+	.txt-medium { 
+		@include rem(font-size, $font-size-medium / 1.2);
+		@include rem(line-height, 4.4rem / 1.1); 
+		letter-spacing: 0;
+	} 
+
+	.txt-normal { 
+		@include rem(font-size, $font-size-normal / 1.2);
+		@include rem(line-height, 3.3rem / 1.2);
+	} 
+}

@@ -1,0 +1,117 @@
+.nav__container {
+  width: 90%;
+  margin: 0 auto;
+  clear: both;
+}
+  
+nav {
+  background: $red;
+  color: #fff;
+  height: 80px;
+  line-height: 80px;
+  /*box-shadow: 1px 1px 1px rgba(0, 0,0, 0.2);*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9998;
+  transition: all 0.5s;
+}
+
+
+  
+ul.navbar-menu {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+}
+
+ul.navbar-menu li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav__link {
+  font-size: $font-size-normal;
+  color: #fff;
+}
+
+.nav__link.current {
+  text-decoration: none;
+    border-bottom: #F2D36A 3px solid;
+    display: inline-block;
+    line-height: 1.65;
+}
+
+a#logo {
+    foat: left;
+    font-family: $brandfont;
+    font-display: optional;
+    font-size: 22px;
+    font-weight: 400;
+    color:#fff;
+    text-decoration:none;
+      animation: navFade 1.3s ease-in-out;
+      position: relative;
+      -webkit-transition: .8s;
+      -moz-transition: .8s;
+      -o-transition: .8s;
+      transition: .8s;
+      pacity: 0.66;
+}
+
+a#logo:hover {
+  cursor: pointer;
+  opacity: 0.66;
+}
+
+button {
+    background: none;
+    width: 30px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+}
+button span {
+      width: 30px;
+      height: 40px;
+      height: 2px;
+      background: #333;
+      display: block;
+      margin: 5px 0;
+}
+
+/* Scrolling actions */
+
+nav.scrollDown {
+  transform: translateY(-80px);
+}
+
+nav.scrollUp {
+  background: #fff;
+}
+
+nav.scrollUp a#logo {
+  color:$near-black;
+}
+
+nav.scrollUp .nav__link {
+  color:$near-black;
+}
+    
+
+@media (max-width: 768px) {
+  nav ul.navbar-menu {
+    display: none;
+    }
+  nav button {
+    display: block;
+    }
+}
+    
+

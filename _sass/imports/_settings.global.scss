@@ -1,0 +1,67 @@
+
+
+
+/* Colors
+   ========================================================================== */
+
+/* Don't use black */
+
+$near-black:  #111;
+$white: #fff;
+
+/* Gray scale */
+
+$gray-dark:   #222;
+$gray-medium: #666;
+$gray-light:  #F3F3F1;
+
+/* Mixed colours */
+$green-dark:    #1B5E20;
+$green-medium:  #2E7D32;
+$green-light:   #43A047;
+
+$red: #E40000;
+
+$orange-medium: #FF9800;
+
+$link-blue: rgb(0, 0, 238);
+
+/* Typography
+   ========================================================================== */
+$base__font-size:   10px;
+
+
+/* Grid
+   ========================================================================== */
+$num-cols: 12 !default;
+$gutter-width: 1.5rem !default;
+
+$element-top-margin: $gutter-width/3 !default;
+$element-bottom-margin: ($gutter-width*2)/3 !default;
+
+// Media Query Ranges
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+
+/* buttons
+   ========================================================================== */
+$button-background-disabled: #DFDFDF;
+$button-color: $link-blue;
+$button-color-disabled: #9F9F9F;
+$button-color-flat: #343434;
+$button-color-raised: #FFF;
+$button-floating-size: 37px !default;
+$button-height: 36px !default;
+$button-font-size-shared: 1.3rem;
+$button-line-height: 36px;
