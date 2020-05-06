@@ -4,9 +4,9 @@
   clear: both;
 }
   
-nav {
-  background: $red;
-  color: #fff;
+.nav {
+  background: #fff;
+  color:$near-black;
   height: 80px;
   line-height: 80px;
   /*box-shadow: 1px 1px 1px rgba(0, 0,0, 0.2);*/
@@ -16,6 +16,11 @@ nav {
   width: 100%;
   z-index: 9998;
   transition: all 0.5s;
+}
+
+.home .nav {
+  background: $red;
+  color: #fff;
 }
 
 
@@ -32,8 +37,13 @@ ul.navbar-menu li {
     margin: 0 10px;
 }
 
+
 .nav__link {
   font-size: $font-size-normal;
+  color: $near-black;
+}
+
+.home .nav__link {
   color: #fff;
 }
 
@@ -50,7 +60,7 @@ a#logo {
     font-display: optional;
     font-size: 22px;
     font-weight: 400;
-    color:#fff;
+    color: $near-black;
     text-decoration:none;
       animation: navFade 1.3s ease-in-out;
       position: relative;
@@ -59,6 +69,10 @@ a#logo {
       -o-transition: .8s;
       transition: .8s;
       pacity: 0.66;
+}
+
+.home a#logo {
+  color: #fff;
 }
 
 a#logo:hover {
@@ -88,28 +102,28 @@ button span {
 
 /* Scrolling actions */
 
-nav.scrollDown {
+.nav.scrollDown {
   transform: translateY(-80px);
 }
 
-nav.scrollUp {
+.nav.scrollUp {
   background: #fff;
 }
 
-nav.scrollUp a#logo {
+.nav.scrollUp a#logo {
   color:$near-black;
 }
 
-nav.scrollUp .nav__link {
+.nav.scrollUp .nav__link {
   color:$near-black;
 }
     
 
 @media (max-width: 768px) {
-  nav ul.navbar-menu {
+  .nav ul.navbar-menu {
     display: none;
     }
-  nav button {
+  .nav button {
     display: block;
     }
 }

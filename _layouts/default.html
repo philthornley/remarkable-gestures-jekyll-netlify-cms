@@ -4,9 +4,10 @@ layout: compress
 <!DOCTYPE html>
 
 {% include head.html %}
-
-  <body class="" itemscope itemtype="http://schema.org/WebPage">
-
+	
+	{% capture layout %}{% if page.layout %}{{ page.layout }}{% endif %}{% endcapture %}
+	
+	<body class="{{ layout }}" itemscope itemtype="http://schema.org/WebPage">
 
     {% include header.html %}
 
