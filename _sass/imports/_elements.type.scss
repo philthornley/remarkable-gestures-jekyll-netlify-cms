@@ -6,8 +6,8 @@ $font-size-huge:    8rem;
 $font-size-xlarge:  6.6rem;
 $font-size-large:   6.6rem;
 $font-size-medium:  3.8rem;
-$font-size-normal:  1.8rem;
-$font-size-small:   1.4rem;
+$font-size-normal:  2.2rem;
+$font-size-small:   1.8rem;
 $font-size-tiny:    1rem;
 
 $light-weight: 400;
@@ -45,7 +45,7 @@ h1, h2,h3,h4,h5,h6 {
 h2,h3,h4,h5,h6 { 
 	@include rem(font-size, $font-size-medium);
 	font-weight: $light-weight;
-	@include rem(line-height, 3.8rem 0); 
+	@include rem(line-height, 4.4rem);  
 	@include rem(margin, 0 0 2.4rem);
 }
 
@@ -63,12 +63,26 @@ h1, .txt-large {
 	letter-spacing: -1px;
 } 
 
+.txt-copy { 
+	@include rem(font-size, $font-size-normal);
+	@include rem(line-height, 3.3rem);
+	font-weight: 300;
+} 
+
 .txt-normal { 
 	@include rem(font-size, $font-size-normal);
+	@include rem(line-height, 3.3rem);
+	font-weight: 300;
 } 
+
+h2.txt-small {
+	@include rem(margin, 0 0 2.4rem);
+}
 
 .txt-small { 
 	@include rem(font-size, $font-size-small);
+	@include rem(line-height, 3.3rem);
+	font-weight: 300;
 } 
 
 .txt-xsmall { 
@@ -99,6 +113,18 @@ blockquote {
 
 .white {
 	color: #fff;
+}
+
+.dropcap {
+    font-size: 3.75em;
+    line-height: .76em;
+    margin-right: .1em;
+    float: left;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    font-family: $brandfont;
+    color: $red;
 }
 
 

@@ -1,21 +1,30 @@
 ---
 layout: default
 ---
-<div class="content__block">
-  
-  <span class="article--date"><time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time></span>
-  {% include page-intro.html %}
-  {{ content }}
+<div class="blog">
+	<div class="blog__header">
+		<div class="blog__header--container">
+		  <h1 class="txt-large brandfont animate-reveal animate-first">{{ page.h1 }}</h1>
+		  {% if page.description and page.description != '' %}
+		  <p class="txt-medium animate-reveal animate-second">{{ page.description }}
+		  {% endif %}
+		</div>
+	</div>
 
+	<div class="blog__content animate-reveal animate-third">
+
+	  {{ content }}
+
+	</div>
 </div>
 
 {% if page.previous.url %}
-<nav aria-label="Adjacent Posts">
-  <div class="content__block next-up reveal__fade reveal__fade-now">
+<nav aria-label="Adjacent Posts" class="upnext">
+  <div class="upnext__container">
     <div>
-      <h2 class="txt-small">Next up</h2>
+      <h2 class="txt-small brandfont">Next up</h2>
 
-      <a href="{{page.previous.url}}" rel="prev" class="txt-xlarge">{{page.previous.title}}</a>
+      <a href="{{page.previous.url}}" rel="prev" class="txt-large brandfont">{{page.previous.title}}</a>
     </div>
   </div>
 </nav>
