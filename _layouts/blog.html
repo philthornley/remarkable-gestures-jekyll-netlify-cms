@@ -2,9 +2,21 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<div class="blog">
+  <div class="blog__header">
+    <div class="blog__header--container">
+      <h1 class="txt-large brandfont animate-reveal animate-first">{{ page.title }}</h1>
+      <p class="txt-medium animate-reveal animate-second">A collection of articles, workshop facilitation guides and short notes to myself of things that I want to remember.</p>
+    </div>
+  </div>
 
+  <div class="blog__content animate-reveal animate-third">
 {% include page-intro.html %}
+  </div>
+</div>
+
+
+
 
 {{ content }}
 
