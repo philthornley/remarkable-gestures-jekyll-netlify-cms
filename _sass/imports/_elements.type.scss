@@ -141,7 +141,12 @@ blockquote {
 
 	h1, .txt-large { 
 		@include rem(font-size, $font-size-large / 1.5);
-		@include rem(line-height, 8rem / 1.2);
+		@include rem(line-height, 7rem / 1.2);
+		@include rem(margin, 0 0 3.4rem);
+	}
+
+	h3.txt-large {
+		@include rem(margin, 0 0 2.4rem);
 	}
 
 
