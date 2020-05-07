@@ -15,7 +15,7 @@ In this article I want to explain the broad foundations that I think are needed 
 Here's a simple visual of this hierarchy... 
 
 
-![delightful-ux-xlarge_1000.png](/images/temp-content/delightful-ux-xlarge_1000.png)
+![delightful-ux-xlarge_1000.png](/images/temp-content/delightful-ux-xlarge_1000.png){:class="my-class"}
 
 
 ## Meeting needs
@@ -25,6 +25,7 @@ So lets take the first and most important foundation first.
 <blockquote>You can't delight your customers without first meeting their needs</blockquote>
 
 This is none negotiable, no matter how simple and easy to use your product is, if it doesn't satisfy the need, your product is worthless. This can be presented as simply as...
+
 
 ![simple-vs-needs-xlarge-1000.png](/images/temp-content/simple-vs-needs-1-xlarge-1000.png)
 

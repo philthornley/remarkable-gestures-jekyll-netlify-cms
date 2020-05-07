@@ -103,7 +103,7 @@ blockquote {
 	color: $gray-medium;
 	margin: 0 0 1.25em;
 	padding: 0.5625em 1.25em 0.625em 1.1875em;
-	border-left: 5px solid $red;
+	border-left: 5px solid $yellow;
 	@include rem(font-size, 3rem);
 	@include rem(line-height, 3.6rem);
 	@include rem(margin, 0 0 3.3rem);
