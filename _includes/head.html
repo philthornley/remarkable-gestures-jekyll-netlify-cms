@@ -9,7 +9,7 @@
 	<meta name="description" content="
 	{% if page.intro_paragraph and page.intro_paragraph != '' %}
         {{ page.intro_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}
-    {% elseif %}
+    {% elsif page.excerpt %}
      	{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}
     {% else %}
      	{{ page.description }}{% endif %}
