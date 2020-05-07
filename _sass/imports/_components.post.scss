@@ -33,12 +33,10 @@
     margin-top: 70px;
 }
 
-.blog__content p, .blog__content h2 {
-    max-width: 75rem;
+.blog__content p, .blog__content h2, .blog__list {
+    max-width: 72.5rem;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1.25em;
-    padding-right: 1.25em;
 }
 
 img {
@@ -77,6 +75,7 @@ body {
 
 .blog__list ul {
     list-style: none;
+    padding-left: 0;
 }
 
 .blog__list li {
@@ -85,4 +84,23 @@ body {
 
 .blog__list h2 {
     @include rem(margin, 0 0 1rem);
+}
+
+@media #{$medium-and-down} {
+    .blog__header--container, .upnext__container {
+        width: 90%;
+    }
+    .blog__content {
+        width: 100%;
+    }
+}
+
+@media #{$small-and-down} {
+    .blog__header {
+        padding-top: 130px;
+    }
+
+    .blog__content p, .blog__content h2, .blog__list {
+        max-width: 85%;
+    }
 }

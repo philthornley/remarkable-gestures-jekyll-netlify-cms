@@ -8,7 +8,7 @@
 	<title>{% if page.section == "home" %}{{ site.title }}{% else %}{{ page.title | default: site.title }}{% endif %}</title>
 	<meta name="description" content="
 	{% if page.intro_paragraph and page.intro_paragraph != '' %}
-        {{ page.intro_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}
+        {{ page.intro_paragraph | strip_html | normalize_whitespace | truncate: 160 | escape }}
     {% elsif page.excerpt %}
      	{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}
     {% else %}
