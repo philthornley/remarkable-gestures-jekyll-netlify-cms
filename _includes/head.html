@@ -6,7 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>{% if page.section == "home" %}{{ site.title }}{% else %}{{ page.title | default: site.title }}{% endif %}</title>
-	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | liquify }}{% else %}{{ site.description }}{% endif %} ">
+	<meta name="description" content="
+	{% if page.intro_paragraph and page.intro_paragraph != '' %}
+        {{ page.intro_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}
+    {% elseif %}
+     	{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}
+    {% else %}
+     	{{ page.description }}{% endif %}
+    ">
 	
 	<link rel="shortcut icon" href="/images/favicon.png">
 	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">

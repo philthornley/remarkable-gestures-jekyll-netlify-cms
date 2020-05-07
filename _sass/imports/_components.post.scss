@@ -19,7 +19,7 @@
     padding-bottom: 70px;
 }
 
-.blog__content {
+.blog__content, .blog__list {
     width: 80%;
     margin: 0 auto;
     clear: both;
@@ -67,10 +67,22 @@ img {
     position: relative;
 }
 
-.upnext a {
+.upnext a, .blog__list a {
     color: $near-black;
 }
 
 body {
     background: transparent;
+}
+
+.blog__list ul {
+    list-style: none;
+}
+
+.blog__list li {
+    @include rem(margin, 0 0 7.4rem);
+}
+
+.blog__list h2 {
+    @include rem(margin, 0 0 1rem);
 }
