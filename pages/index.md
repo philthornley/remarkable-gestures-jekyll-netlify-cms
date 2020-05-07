@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Welcome to Remarkable Gestures
+title: About Phil Thornley
 permalink: /
 section: home
 h1: Welcome to Remarkale Gestures
