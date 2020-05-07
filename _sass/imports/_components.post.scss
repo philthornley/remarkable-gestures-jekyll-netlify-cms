@@ -33,7 +33,7 @@
     margin-top: 70px;
 }
 
-.blog__content p, .blog__content h2, .blog__content ul, .blog__list, blockquote {
+.blog__content p, .blog__content h2, .blog__content ul, .blog__content ol, .blog__content figure, .blog__list, blockquote {
     max-width: 72.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -94,7 +94,7 @@ body {
         width: 100%;
     }
 
-    .blog__content p, .blog__content h2, .blog__content ul, .blog__list, blockquote {
+    .blog__content p, .blog__content h2, .blog__content ul, .blog__content ol, .blog__content figure, .blog__list, blockquote {
         max-width: 85%;
     }
 }
@@ -104,7 +104,7 @@ body {
         padding-top: 130px;
     }
 
-    .blog__content p, .blog__content h2, .blog__content ul, .blog__list, blockquote {
+    .blog__content p, .blog__content h2, .blog__content ul, .blog__content ol, .blog__content figure, .blog__list, blockquote {
         max-width: 85%;
     }
 }
