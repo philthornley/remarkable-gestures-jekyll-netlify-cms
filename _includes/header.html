@@ -3,7 +3,7 @@
 <nav class="nav">
   <div class="nav__container">
     <a class="" id="logo" href="{{ "/" | relative_url }}">Phil Thornley</a>
-    <button>
+    <button class="btn--menu">
       <span></span>
       <span></span>
       <span></span>
@@ -13,6 +13,14 @@
       <li><a href="/" class="nav__link {% if page.url == "/" %} current {% endif %}" >About</a></li>
       <li><a href="/blog" class="nav__link{% if page.url == "/blog" %} current {% endif %}">Writing</a></li>
     </ul>
+
+    <nav class="menu">
+        <button class="btn btn--close"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
+        <ul class="menu__inner">
+          <li class="menu__item"><a class="menu__link" href="/">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="/blog">Writing</a></li>
+        </ul>
+      </nav>
     
   </div>
 </nav>
