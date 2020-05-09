@@ -33,12 +33,26 @@
     margin-top: 70px;
 }
 
-.blog__content p, .blog__content h2, .blog__content ul, .blog__content ol, .blog__content figure, .blog__list, blockquote {
+.blog__content p, .blog__content h2, .blog__content ul, .blog__content ol, .blog__content figure, .blog__content pre, .blog__list, blockquote {
     max-width: 72.5rem;
     margin-left: auto;
     margin-right: auto;
 }
 
+.blog__content pre {
+    border: 1px solid $yellow;
+    padding: 2rem;
+}
+
+.blog__content a:link, .blog__content a:visited {
+    color: #0277BD;
+}
+
+.blog__content a:hover {
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-color: $yellow;
+}
 img {
     max-width: 100%;
 }
@@ -86,6 +100,20 @@ body {
     @include rem(margin, 0 0 1rem);
 }
 
+.blog__list a {
+    text-decoration: none;
+    color: $yellow;
+}
+
+.blog__list a span {
+    color: $near-black;
+}
+
+.blog__list a:hover {   
+    opacity: 0.76;
+    text-decoration: underline; 
+}
+
 @media #{$medium-and-down} {
     .blog__header--container, .upnext__container {
         width: 90%;
@@ -94,7 +122,7 @@ body {
         width: 100%;
     }
 
-    .blog__content p, .blog__content h2, .blog__content ul, .blog__content ol, .blog__content figure, .blog__list, blockquote {
+    .blog__content p, .blog__content h2, .blog__content ul, .blog__content ol, .blog__content figure, .blog__content pre, .blog__list, blockquote {
         max-width: 85%;
     }
 }
@@ -104,7 +132,7 @@ body {
         padding-top: 130px;
     }
 
-    .blog__content p, .blog__content h2, .blog__content ul, .blog__content ol, .blog__content figure, .blog__list, blockquote {
+    .blog__content p, .blog__content h2, .blog__content ul, .blog__content ol, .blog__content figure, .blog__content pre, .blog__list, blockquote {
         max-width: 85%;
     }
 }

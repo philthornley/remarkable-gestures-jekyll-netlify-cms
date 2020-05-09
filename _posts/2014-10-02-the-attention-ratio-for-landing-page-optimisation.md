@@ -26,13 +26,12 @@ So here it is and example...
 
 Let's break this down.
 
-<span class="dropcap">1</span> The first step is to establish the total number of objects on the page, this includes blocks of text (round this up to 1 object if presented together), images, lists, headings, links (separate objects) etc.
+1. The first step is to establish the total number of objects on the page, this includes blocks of text (round this up to 1 object if presented together), images, lists, headings, links (separate objects) etc.
 
-<span class="dropcap">2</span> The next step is to establish how many of these objects are supportive of the main CTA / objective of the page. For example, if the main objective of the page is to open a Current savings account, and the object is a list of benefits for the account, this is supportive of the CTA. However, if the object is introducing another type of savings account, let's say a credit card, it is not supportive of the main CTA, in this case it should not be counted.
+2. The next step is to establish how many of these objects are supportive of the main CTA / objective of the page. For example, if the main objective of the page is to open a Current savings account, and the object is a list of benefits for the account, this is supportive of the CTA. However, if the object is introducing another type of savings account, let's say a credit card, it is not supportive of the main CTA, in this case it should not be counted.
 
-<span class="dropcap">3</span> Next up is the Number of links / actions a customer can complete but are not what you want them to do. For example, keeping our theme of a Current savings account sign up page, this could be links to other products or to corporate pages such as Careers pages, basically any other page then the next step in the sign up funnel. This should also include associated pages such as Terms & Conditions of the account or a separate page detailing the benefits of the account. Why? Because this is not the main objective, the customer has gone down a separate path and might not come back. If they have questions they should be answered on the landing page. 
-
-<span class="dropcap">4</span> Finally, we have the number of actions you want them to do, this should ideally be 1, however in some scenarios you may need another CTA. For example, you may have a sign up CTA but also a callback CTA, in this case the CTAs are complementary. 
+3. Next up is the Number of links / actions a customer can complete but are not what you want them to do. For example, keeping our theme of a Current savings account sign up page, this could be links to other products or to corporate pages such as Careers pages, basically any other page then the next step in the sign up funnel. This should also include associated pages such as Terms & Conditions of the account or a separate page detailing the benefits of the account. Why? Because this is not the main objective, the customer has gone down a separate path and might not come back. If they have questions they should be answered on the landing page. 
+4. Finally, we have the number of actions you want them to do, this should ideally be 1, however in some scenarios you may need another CTA. For example, you may have a sign up CTA but also a callback CTA, in this case the CTAs are complementary. 
 
 With this in mind, let's look at a real example.
 

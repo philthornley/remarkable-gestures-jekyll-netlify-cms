@@ -47,8 +47,16 @@ ul.navbar-menu li {
   color: #fff;
 }
 
+
+a.nav__link:hover {
+    text-decoration: none;
+    border-bottom: #F2D36A 3px solid;
+    display: inline-block;
+    line-height: 1.65;
+}
+
 .nav__link.current {
-  text-decoration: none;
+    text-decoration: none;
     border-bottom: #F2D36A 3px solid;
     display: inline-block;
     line-height: 1.65;
