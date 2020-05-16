@@ -20,6 +20,8 @@ layout: compress
 
     {% include footer.html %}
 
+    <script src="/js/jquery-2.2.4.min.js">
+
     <script src="/js/anime.min.js"></script>
 		<script src="/js/menu-reveal.js"></script>
 		<script>
@@ -30,7 +32,7 @@ layout: compress
 
 			document.querySelector('.btn--menu').addEventListener('click', function() {
 				revealer.reveal({
-					bgcolor: '#E40000',
+					bgcolor: '#F2D36A',
 					duration: 400, 
 					easing: 'easeInOutCubic',
 					onCover: function(contentEl, revealerEl) {
@@ -47,7 +49,7 @@ layout: compress
 				closeCtrl.removeEventListener('click', closeMenu);
 				navEl.classList.remove('menu--open');
 				revealer.reveal({
-					bgcolor: '#E40000',
+					bgcolor: '#F2D36A',
 					duration: 400, 
 					easing: 'easeInOutCubic',
 					onCover: function(contentEl, revealerEl) {
@@ -58,7 +60,7 @@ layout: compress
 			}
 		})();
 		</script>
-
+		<script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </body>
 
 </html>
