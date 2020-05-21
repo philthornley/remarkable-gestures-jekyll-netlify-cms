@@ -11,8 +11,6 @@ description: Not a comprehensive guide by any means, but my own guide to using G
 ---
 ## The one off first step
 
-![](/assets/img/uploads/client-logo.png)
-
 Grunt runs off Node.js, so the first thing you need to do is install Node.js on your computer. This is a one off exercise per device.
 
 Go to [nodejs.org/download/](http://nodejs.org/download/), download the package and run the install.
