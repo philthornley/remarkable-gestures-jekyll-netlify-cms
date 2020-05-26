@@ -7,32 +7,37 @@ categories: general
 description: What is design thinking and how do I do it?
 ---
 
-For a while design thinking puzzled me, it was around 2015, there seemed to be wave of agencies promoting Design Thinking as a capability and I'd read lots of articles describing the methodology of understanding users and their problems, ideating potential solutions to solve the problems, creating lowfi prototypes, testing the prototypes with users to get feedback. Reading this I'd wonder "but I'm already doing this, what's missing?". I was already using Design Thinking but without the label. 
+For a while design thinking puzzled me, it was around 2014, there seemed to be wave of agencies promoting Design Thinking as a 'new' capability and I'd read lots of articles describing; the methodology of understanding users and their problems, ideating potential solutions to solve the problems, creating lowfi prototypes, testing the prototypes with users to get feedback. Reading this I'd wonder "but I'm already doing this, what's missing?". I was already using Design Thinking but without the label. 
 
-Design thinking has been around a lot longer than 2015, people have been using Design Thinking and it's human centered design practices it's practice since the 1970s but the term Design Thinking is often credited to David Kelly and Tim Brown of IDEO fame who coined the term in the 1990s. 
+## Origins of Design Thinking
 
-Design Thinking is an approach and methodology, it's a hands on and user centric way of solving problems.
-
-Design thinking is not linear. You may find out things later in the process, that you didn't know at the beginning, so you repeat or jump back to another part of the process.
-
-Design thinking is not fixed. there are plenty
-It maps perfectly to the double diamond
+Design thinking has been around a lot longer than 2014, people have been using Design Thinking and it's human centered design practices it's practice since the 1970s but the term Design Thinking is often credited to David Kelly and Tim Brown of IDEO fame who coined the term in the 1990s. 
 
 
+## What is deisng Thinking?
+
+Design Thinking is an approach and methodology, put simply, **it's a hands on and user centric way of solving problems**.
+
+Design thinking is not linear, it's iterative and can be circular. You may find out things later in the process, that you didn't know at the beginning, so you repeat or jump back to another part of the process.
+
+Design thinking lowers risk as it has a test and learn processes
+
+It's all about understanding more about your users and their needs. The more you know about your users and their needs, the better decisions you'll make about your product or service to solve the users problem and meet their needs.
+
+An important principle of Design thinking is co-designing - to solve problems we need to involve a mix of talents and the end users.
+
+## How do I use design thinking?
+
+Let's look at the key steps and phases of applying design thinking...
 
 
+## Step 1 - Understand
 
-It's an iterative process, all about gaining a better understanding of the user and their problem
+You start by trying to understand the problem you are trying to solve and emphasising with the users, this may be done by research, go out to observe and talk to users 
 
-An important principle of Design Thinking is Co-designing - to solve problems we need to involve a mix of talents and the end users
+Find out what their needs are, what problems are they trying to solve?
 
-It lowers risk as it has a test and learn processes
-
-
-Step 1 - Understand
-You start by trying to understand the problem you are trying to solve and emphasising with the users, this may be done by research, going out to observe and talk to users 
-
-What works well is equally important
+Find out what works well is equally important
 
 You also want to talk people who have knowledge in this area.
 

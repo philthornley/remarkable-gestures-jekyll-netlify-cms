@@ -5,11 +5,14 @@
     <a class="" id="logo" href="{{ "/" | relative_url }}">Phil Thornley</a>
 
     <button class="nav__btn hamburger hamburger--squeeze" aria-expanded="false" aria-controls="menu">
-
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
-      
+    </button>
+
+    <button class="btn btn--close hamburger hamburger--squeeze" aria-expanded="true"><span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
     </button>
     
     <ul class="navbar-menu">
@@ -18,7 +21,7 @@
     </ul>
 
     <nav class="menu">
-        <button class="btn btn--close"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
+        
         <ul class="menu__inner">
           <li class="menu__item"><a class="menu__link txt-large brandfont animate-reveal animate-first" href="/">About</a></li>
           <li class="menu__item"><a class="menu__link txt-large brandfont animate-reveal animate-first" href="/blog">Writing</a></li>

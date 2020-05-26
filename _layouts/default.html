@@ -21,12 +21,13 @@ layout: compress
     {% include footer.html %}
 
     <script src="/js/anime.min.js"></script>
-		<script src="/js/menu-reveal.js"></script>
-		<script>
+	<script src="/js/menu-reveal.js"></script>
+	<script>
 		(function() {
 			var navEl = document.querySelector('nav.menu'),
 				revealer = new RevealFx(navEl),
-				closeCtrl = navEl.querySelector('.btn--close');
+				openCtrl = document.querySelector('.nav__btn'),
+				closeCtrl = document.querySelector('.btn--close');
 
 			document.querySelector('.nav__btn').addEventListener('click', function() {
 				revealer.reveal({
@@ -57,8 +58,8 @@ layout: compress
 				});
 			}
 		})();
-		</script>
-		<script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	</script>
+	<script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </body>
 
 </html>
