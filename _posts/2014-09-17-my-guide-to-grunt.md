@@ -3,15 +3,13 @@ h1: My personal guide to GRUNT
 layout: post
 author: john_doe
 permalink: /my-guide-to-grunt/
-date: 2014-09-17 22:06:51
+date: 2014-09-17T22:06:51.000Z
 strapline: Not a comprehensive guide by any means, but my own guide to using GRUNT...
 title: My personal guide to GRUNT
 categories: general
 description: Not a comprehensive guide by any means, but my own guide to using GRUNT...
 ---
 ## The one off first step
-
-![](/assets/img/uploads/client-logo.png)
 
 Grunt runs off Node.js, so the first thing you need to do is install Node.js on your computer. This is a one off exercise per device.
 
@@ -60,14 +58,6 @@ Lastly, we'll need to install the 'Grunt Command Line Interface'. This just allo
 ```
 npm install -g grunt-cli --dev
 ```
-
-However if you get errors (like I did the first time I attempted this) you will need to use this instead...
-
-```
- sudo chown -R $USER /usr/local
-```
-
-This is just like using a plain old sudo but much more secure. [See Isaac Schlueter's explanation here](http://foohack.com/2010/08/intro-to-npm/#what_no_sudo).
 
 Okay, very important step, close the terminal and reopen to let the changes kick in. I didn't do this and spent a long time trying to figure out if I've done anything wrong. Whenever anything doesn't seem to work the ye olde 'switch it off and switch it back on again' always seems to work.
 
@@ -162,20 +152,4 @@ module.exports = function(grunt) {
 
 * If you get a 'Unexpected identifier' message, watch out for missing commas.
 * Always restart the terminal after you've installed a new plugin via the NPM.
-* Try using the `sudo` trick mentioned earlier to install.
 
-## Update: Friday the 13th (13/03/2015) - npm WARN locking Error Fix
-
-I recently ran into a problem whereby I was getting an error when trying to install & run grunt...
-
-![npm-lock-error-terminal.png](/images/temp-content/npm-lock-error-terminal.png)
-
-## \#Here's the fix
-
-Run this command in the terminal to clear the cache and hopefully 'unlock' your files.
-
-```
-sudo npm cache clean
-```
-
-(Note: I was forced to run this with SUDO in order to force the cache clear)
