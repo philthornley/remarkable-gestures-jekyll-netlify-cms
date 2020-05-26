@@ -22,43 +22,8 @@ layout: compress
 
     <script src="/js/anime.min.js"></script>
 	<script src="/js/menu-reveal.js"></script>
-	<script>
-		(function() {
-			var navEl = document.querySelector('nav.menu'),
-				revealer = new RevealFx(navEl),
-				openCtrl = document.querySelector('.nav__btn'),
-				closeCtrl = document.querySelector('.btn--close');
-
-			document.querySelector('.nav__btn').addEventListener('click', function() {
-				revealer.reveal({
-					bgcolor: '#F2D36A',
-					duration: 400, 
-					easing: 'easeInOutCubic',
-					onCover: function(contentEl, revealerEl) {
-						navEl.classList.add('menu--open');
-						contentEl.style.opacity = 1;
-					},
-					onComplete: function() {
-						closeCtrl.addEventListener('click', closeMenu);
-					}
-				});
-			});
-
-			function closeMenu() {
-				closeCtrl.removeEventListener('click', closeMenu);
-				navEl.classList.remove('menu--open');
-				revealer.reveal({
-					bgcolor: '#F2D36A',
-					duration: 400, 
-					easing: 'easeInOutCubic',
-					onCover: function(contentEl, revealerEl) {
-						navEl.classList.remove('menu--open');
-						contentEl.style.opacity = 0;
-					}
-				});
-			}
-		})();
-	</script>
+	{% include partials/js__mobile-menu-open.html %}
+	
 	<script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </body>
 

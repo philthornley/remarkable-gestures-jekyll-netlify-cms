@@ -1,0 +1,38 @@
+<script>
+(function() {
+  var navEl = document.querySelector('nav.menu'),
+  revealer = new RevealFx(navEl),
+  navBtn = document.querySelector('.nav__btn');
+
+  navBtn.addEventListener('click', function() {
+    const open = JSON.parse(navBtn.getAttribute('aria-expanded'));
+    navBtn.setAttribute('aria-expanded', !open); 
+
+    if (!open){
+      revealer.reveal({
+        bgcolor: '#F2D36A',
+        duration: 400, 
+        easing: 'easeInOutCubic',
+        onCover: function(contentEl, revealerEl) {
+          navEl.classList.add('menu--open');
+          contentEl.style.opacity = 1;
+        },
+        
+      });
+    }
+    else {
+      revealer.reveal({
+      bgcolor: '#F2D36A',
+      duration: 400, 
+      easing: 'easeInOutCubic',
+      onCover: function(contentEl, revealerEl) {
+        navEl.classList.remove('menu--open');
+        contentEl.style.opacity = 0;
+      }
+    });
+    }
+    
+  }); 
+  
+})();
+</script>

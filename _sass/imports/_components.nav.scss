@@ -185,12 +185,7 @@ button {
   transition: transform 0s 0.4s;
 }
 
-.btn--close {
-  opacity: 0;
-}
-
-.menu--open .menu__item,
-.menu--open .btn--close {
+.menu--open .menu__item {
   opacity: 1;
   transform: translate3d(0,0,0);
   transition: opacity 0.4s 0.135s, transform 0.4s 0.135s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -226,14 +221,6 @@ svg:not(:root) {
     height: 1.5em;
     margin: 0 auto;
     fill: currentColor;
-}
-
-.btn--close {
-    position: absolute;
-    top: 3vw;
-    right: 3vw;
-    font-size: 0.75em;
-    z-index: 100;
 }
 
 
