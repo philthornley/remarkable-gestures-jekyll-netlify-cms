@@ -212,6 +212,10 @@ button {
   outline: none;
 }
 
+.home a#logo.menu--open {
+    color: $near-black;
+  }
+
 svg:not(:root) {
     overflow: hidden;
 }

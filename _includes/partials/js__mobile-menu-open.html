@@ -1,6 +1,7 @@
 <script>
 (function() {
   var navEl = document.querySelector('nav.menu'),
+  logo = document.getElementById("logo"),
   revealer = new RevealFx(navEl),
   navBtn = document.querySelector('.nav__btn');
 
@@ -15,6 +16,7 @@
         easing: 'easeInOutCubic',
         onCover: function(contentEl, revealerEl) {
           navEl.classList.add('menu--open');
+          logo.classList.add('menu--open');
           contentEl.style.opacity = 1;
         },
         
@@ -27,6 +29,7 @@
       easing: 'easeInOutCubic',
       onCover: function(contentEl, revealerEl) {
         navEl.classList.remove('menu--open');
+        logo.classList.remove('menu--open');
         contentEl.style.opacity = 0;
       }
     });

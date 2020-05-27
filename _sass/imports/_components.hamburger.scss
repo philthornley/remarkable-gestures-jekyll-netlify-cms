@@ -27,7 +27,15 @@
   nav button[aria\-expanded=true] .hamburger-inner,
  nav button[aria\-expanded=true] .hamburger-inner::before,
 nav button[aria\-expanded=true] .hamburger-inner::after {
-    background-color: #000; }
+    background-color: $near-black; }
+
+.home .hamburger-inner, .home .hamburger-inner::before, .home .hamburger-inner::after {
+  background-color: #fff;
+}
+
+.nav.scrollUp .hamburger-inner, .nav.scrollUp .hamburger-inner::before, .nav.scrollUp .hamburger-inner::after {
+  background-color: $near-black;
+}
 
 .hamburger-box {
   width: 40px;
@@ -42,7 +50,7 @@ nav button[aria\-expanded=true] .hamburger-inner::after {
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 26px;
     height: 2px;
-    background-color: #fff;
+    background-color: #111;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
