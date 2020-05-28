@@ -18,6 +18,10 @@
   transition: all 0.5s;
 }
 
+.nav__btn {
+    display: inline-block;
+  }
+
 .home .nav {
   background: $red;
   color: #fff;
@@ -120,14 +124,7 @@ button {
 }
     
 
-@media (max-width: 768px) {
-  .nav ul.navbar-menu {
-    display: none;
-    }
-  .nav button {
-    display: block;
-    }
-}
+
     
 
 
@@ -227,4 +224,18 @@ svg:not(:root) {
     fill: currentColor;
 }
 
+@media (min-width: 769px){
+  .nav__btn, .hamburger {
+      display: none;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .nav ul.navbar-menu {
+    display: none;
+    }
+  
+}
 
