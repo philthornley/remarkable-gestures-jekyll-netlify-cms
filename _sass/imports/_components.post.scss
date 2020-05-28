@@ -19,6 +19,8 @@
     padding-bottom: 70px;
 }
 
+
+
 .blog__content, .blog__list {
     width: 80%;
     margin: 0 auto;
@@ -130,6 +132,10 @@ body {
 @media #{$small-and-down} {
     .blog__header {
         padding-top: 130px;
+    }
+
+    .blog__header--intro {
+        margin: 0;
     }
 
     .blog__content p, .blog__content h2, .blog__content ul, .blog__content ol, .blog__content figure, .blog__content pre, .blog__list, blockquote {
