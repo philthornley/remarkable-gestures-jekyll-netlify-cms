@@ -20,7 +20,12 @@
 
 .nav__btn {
     display: inline-block;
-  }
+}
+
+.nav__btn:hover {
+    opacity: 0.66;
+}
+    
 
 .home .nav {
   background: $red;
